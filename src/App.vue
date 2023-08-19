@@ -5,7 +5,8 @@
       <Conversor tipo-um="USD" tipo-dois="BRL"/>
       <Conversor tipo-um="BRL" tipo-dois="USD"/>
       <Conversor tipo-um="USD" tipo-dois="BRLT"/>
-      <Conversor tipo-um="BRLT" tipo-dois="USD"/>
+      <Conversor tipo-um="BRL" tipo-dois="CAD"/>
+      <Conversor tipo-um="CAD" tipo-dois="BRL"/>
       <Conversor tipo-um="BTC" tipo-dois="BRL"/>
       <Conversor tipo-um="BRL" tipo-dois="BTC"/>
       <Conversor tipo-um="BRL" tipo-dois="EUR"/>
