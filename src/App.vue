@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <div id="app">
+  <h1>Currency Converter</h1>
+    <div class="container"> 
+      <Conversor tipo-um="USD" tipo-dois="BRL"/>
+      <Conversor tipo-um="BRL" tipo-dois="USD"/>
+      <Conversor tipo-um="USD" tipo-dois="BRLT"/>
+      <Conversor tipo-um="BRLT" tipo-dois="USD"/>
+      <Conversor tipo-um="BTC" tipo-dois="BRL"/>
+      <Conversor tipo-um="BRL" tipo-dois="BTC"/>
+      <Conversor tipo-um="BRL" tipo-dois="EUR"/>
+      <Conversor tipo-um="EUR" tipo-dois="BRL"/>
+    </div>
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Conversor from './components/Conversor.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Conversor
   }
 }
 </script>
@@ -20,7 +31,29 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #495057;
 }
+#app h1 {
+  color: #fca311;
+}
+body {
+  background-color: #000000;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.container {
+  width: 64rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 2rem;
+  align-content: center;
+  margin: 0 6.25rem;
+  padding: 0.5rem 1rem;
+}
+
 </style>
