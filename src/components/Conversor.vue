@@ -25,7 +25,7 @@
       async converter() {
       try {
         let formatTextUrl = `${this.tipoUm}-${this.tipoDois}`;
-        let url = `http://economia.awesomeapi.com.br/json/last/${formatTextUrl}`;
+        let url = `https://economia.awesomeapi.com.br/json/last/${formatTextUrl}`
         let concatenatedTypes = this.tipoUm.concat(this.tipoDois);
 
         const response = await fetch(url);
